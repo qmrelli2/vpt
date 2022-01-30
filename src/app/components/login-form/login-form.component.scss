@@ -1,0 +1,37 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .seperator {
+    width: 100%;
+    text-align: center;
+    position: relative;
+
+    .line {
+      border-bottom: 1px solid #939393;
+      width: 100%;
+      display: block;
+      z-index: 1;
+      position: absolute;
+      height: 50%;
+    }
+
+    .text {
+      background-color: #f5f6f7;
+      z-index: 2;
+    }
+  }
+
+  .google-login {
+    padding: 0.5rem;
+    border-radius: 1.2rem;
+    border: 1px solid #939393;
+    width: fit-content;
+
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}

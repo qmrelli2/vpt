@@ -1,0 +1,28 @@
+<div class="logo" [routerLink]="'/'">
+  <img src="https://thevpts.com/images/logos/logo.png" alt="Logo" />
+  <h1 class="site-title">Virtual Personal Trainer/Tutor</h1>
+</div>
+
+<div class="menu">
+  <div class="menu-item">
+    <a href="">Keşfet</a>
+  </div>
+  <div class="menu-item">
+    <a [routerLink]="'courses'">Kurslar</a>
+  </div>
+  <div class="menu-item">
+    <a [routerLink]="'contact'">İletişim</a>
+  </div>
+</div>
+
+<div class="search">
+  <div class="search-box">
+    <input type="text" placeholder="Arayın" />
+    <i class="fas fa-search"></i>
+  </div>
+</div>
+
+<div class="action">
+  <button class="login" [routerLink]="'login'">Giriş Yap</button>
+  <button class="register" [routerLink]="'register'">Kayıt Ol</button>
+</div>

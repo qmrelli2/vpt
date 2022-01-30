@@ -1,0 +1,41 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+
+    .title {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    .navigation {
+      display: flex;
+      align-items: center;
+      i {
+        color: #3eb489;
+        border: 1px solid #3eb489;
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:first-child {
+          margin-right: 1rem;
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .category-list {
+    display: flex;
+  }
+}

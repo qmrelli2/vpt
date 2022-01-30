@@ -1,0 +1,14 @@
+<div class="top">
+  <h3 class="title">{{ title }}</h3>
+  <div class="navigation">
+    <i class="fas fa-chevron-left"></i>
+    <i class="fas fa-chevron-right"></i>
+  </div>
+</div>
+
+<div class="course-list">
+  <app-top-courses-item
+    *ngFor="let item of courseList"
+    [item]="item"
+  ></app-top-courses-item>
+</div>

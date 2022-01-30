@@ -1,0 +1,86 @@
+:host {
+  background-image: url("https://amigos-digital.ru/img/pictures/11.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem;
+  color: #232323;
+  min-height: 50vh;
+
+  .title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    width: 40%;
+  }
+
+  .search {
+    margin-bottom: 2rem;
+
+    .search-box {
+      border-radius: 1.2rem;
+      background-color: white;
+      padding: 0.25rem;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      border: 1px solid #939393;
+      box-shadow: 0 0.2rem 2rem rgba($color: #000000, $alpha: 0.1);
+
+      input {
+        margin-left: 1rem;
+        min-width: 15rem;
+        border: none;
+      }
+      span {
+        background-color: #3eb489;
+        border-radius: 1rem;
+        padding: 0.5rem 2rem;
+        margin-left: 2rem;
+        color: white;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .action {
+    display: flex;
+    align-items: center;
+
+    .start {
+      background-color: #3eb489;
+      border: none;
+      padding: 0.8rem 3rem;
+      border-radius: 1.2rem;
+      color: white;
+      margin-right: 2rem;
+    }
+
+    .explore {
+      border: none;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+
+      i {
+        color: #3eb489;
+        background-color: white;
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0.5rem;
+        box-shadow: 0 0.2rem 2rem rgba($color: #000000, $alpha: 0.1);
+      }
+    }
+  }
+}

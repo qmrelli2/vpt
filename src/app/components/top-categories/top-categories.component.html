@@ -1,0 +1,14 @@
+<div class="top">
+  <h3 class="title">Popüler Kategoriler</h3>
+  <div class="navigation">
+    <i class="fas fa-chevron-left"></i>
+    <i class="fas fa-chevron-right"></i>
+  </div>
+</div>
+
+<div class="category-list">
+  <app-top-categories-item
+    *ngFor="let item of categoryList"
+    [item]="item"
+  ></app-top-categories-item>
+</div>

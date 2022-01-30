@@ -1,0 +1,90 @@
+:host {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 0.2rem 2rem rgba($color: #000000, $alpha: 0.1);
+  font-size: 1rem;
+  font-weight: 400;
+
+  .logo {
+    flex-grow: 1;
+    height: 3rem;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    img {
+      height: 100%;
+      object-fit: contain;
+    }
+    .site-title {
+      font-size: 1.2rem;
+      color: #232323;
+    }
+  }
+
+  .menu {
+    display: flex;
+    margin-right: 2rem;
+
+    .menu-item {
+      margin-right: 1rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        color: #939393;
+        font-size: inherit;
+        font-weight: inherit;
+      }
+    }
+  }
+
+  .search {
+    margin-right: 2rem;
+
+    .search-box {
+      border: 1px solid #939393;
+      padding: 0.75rem;
+      border-radius: 1.2rem;
+
+      input {
+        border: none;
+      }
+      i {
+        color: #939393;
+      }
+    }
+  }
+
+  .action {
+    display: flex;
+    border-left: 1px solid #939393;
+
+    button {
+      border: none;
+      height: 2rem;
+      padding: 0 2rem;
+      font-size: inherit;
+      font-weight: inherit;
+
+      //   &:first-child {
+      //     margin-right: 2rem;
+      //   }
+
+      &.login {
+        background-color: transparent;
+        color: #939393;
+      }
+      &.register {
+        background-color: #3eb489;
+        color: white;
+        border-radius: 1.2rem;
+      }
+    }
+  }
+}
