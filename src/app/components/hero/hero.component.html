@@ -1,4 +1,4 @@
-<h1 class="title">Learn about your passion</h1>
+<h1 class="title">Virtual Personel Trainer/Tutor</h1>
 <h3 class="subtitle">
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fugit error
   itaque quasi, aspernatur maiores?
@@ -13,8 +13,22 @@
 
 <div class="action">
   <button class="start">Hemen Başla</button>
-  <button class="explore">
+  <button class="explore" (click)="togglePopup(true)">
     <i class="fas fa-play"></i>
-    <span>Keşfet</span>
+    <span>Biz Kimiz?</span>
   </button>
+</div>
+
+<div class="popup-wrapper" *ngIf="showPopup" (click)="togglePopup(false)">
+  <div class="popup">
+    <iframe
+      width="1000"
+      height="562.5"
+      src="https://www.youtube.com/embed/ZNazUdskfBU"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
 </div>

@@ -1,15 +1,17 @@
 :host {
-  background-color: #eaeaea;
+  background-color: #f5f6f7;
   margin: 0 1rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-items: center;
   border-radius: 1.2rem;
   padding: 1rem;
   min-height: 12rem;
+  box-shadow: 0 0.1rem 1rem rgba($color: #000000, $alpha: 0.1);
+  border: 1px solid #eaeaea;
+
   cursor: pointer;
   user-select: none;
 

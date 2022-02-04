@@ -1,0 +1,84 @@
+:host {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+    color: #232323;
+  }
+
+  .cards {
+    display: flex;
+
+    .card {
+      width: calc(50% - 2rem);
+      border: 1px solid;
+      border-radius: 1.2rem;
+      padding: 2rem;
+      cursor: pointer;
+      user-select: none;
+      box-shadow: 0 0.1rem 1rem rgba($color: #000000, $alpha: 0.1);
+      background-color: #fff;
+      border-color: #eaeaea;
+      color: #232323;
+
+      i {
+        background-color: #3eb489;
+        color: white;
+        font-size: 3rem;
+        padding: 0.8rem;
+        border-radius: 1rem;
+      }
+
+      h4 {
+        font-size: 1.2rem;
+        margin: 1.4rem 0;
+      }
+
+      .step {
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+
+        i {
+          background-color: transparent;
+          color: #3eb489;
+          font-size: 1rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+
+      &:first-child {
+        margin-right: 1rem;
+      }
+      &:last-child {
+        margin-left: 1rem;
+      }
+
+      &.active {
+        background-color: #3eb489;
+        border-color: #3eb489;
+        color: white;
+
+        i {
+          background-color: white;
+          color: #3eb489;
+          font-size: 3rem;
+          padding: 0.8rem;
+          border-radius: 1rem;
+        }
+
+        .step {
+          i {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

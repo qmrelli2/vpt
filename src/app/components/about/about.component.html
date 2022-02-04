@@ -1,0 +1,19 @@
+<h3 class="title">VPT Nasıl Çalışır</h3>
+
+<div class="cards">
+  <div
+    class="card"
+    [class.active]="activeCard === q"
+    *ngFor="let card of cards; let q = index"
+    (mouseenter)="activeCard = q"
+    (mouseleave)="activeCard = 0"
+  >
+    <i [class]="card.icon"></i>
+    <h4>{{ card.title }}</h4>
+
+    <div class="step" *ngFor="let phase of card.steps; let i = index">
+      <i class="fas fa-check"></i>
+      <p>{{ phase.text }}</p>
+    </div>
+  </div>
+</div>

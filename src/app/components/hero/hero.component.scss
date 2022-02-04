@@ -84,3 +84,23 @@
     }
   }
 }
+
+.popup-wrapper {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+
+  .popup {
+    background-color: white;
+    box-shadow: 0 0.2rem 2rem rgba($color: #000000, $alpha: 0.1);
+    border: 1px solid #eaeaea;
+    padding: 2rem;
+    border-radius: 1.2rem;
+  }
+}
