@@ -1,8 +1,20 @@
-<h2>Giriş Yap</h2>
+<h2>Hesap Oluştur</h2>
 
 <form>
   <div class="form-item">
     <p>Email</p>
+    <input type="text" />
+  </div>
+  <div class="form-item">
+    <p>Ad</p>
+    <input type="text" />
+  </div>
+  <div class="form-item">
+    <p>Soyad</p>
+    <input type="text" />
+  </div>
+  <div class="form-item">
+    <p>Kullanıcı Adı</p>
     <input type="text" />
   </div>
   <div class="form-item">
@@ -11,7 +23,7 @@
   </div>
 </form>
 
-<button class="login-button">Giriş Yap</button>
+<button class="login-button">Oluştur</button>
 
 <div class="seperator">
   <!-- <span class="line"></span> -->
@@ -25,4 +37,4 @@
   />
 </button>
 
-<a class="reset" [routerLink]="'/register'">Hesabın yok mu? Hemen kayıt ol.</a>
+<a class="reset" [routerLink]="'/register'">Hesabın var mı? Hemen giriş yap.</a>

@@ -18,6 +18,7 @@ import { LoginFormComponent } from './components/login-form/login-form.component
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { RegisterFormComponent } from './components/register-form/register-form.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FooterComponent } from './components/footer/footer.component';
     CoursesComponent,
     LoginFormComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    RegisterFormComponent
   ],
   imports: [
     BrowserModule,
