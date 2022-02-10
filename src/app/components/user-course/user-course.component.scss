@@ -1,25 +1,123 @@
 :host {
-	padding: 5rem;
-	width: 100%;
-	.card {
+	background-color: #f5f6f7;
+	margin:  1rem 0 ;
+	display: flex;
+	flex-direction: column;
+	border-radius: 1.2rem;
+	padding: 1rem 1rem 1rem 15rem;
+	cursor: pointer;
+	user-select: none;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #eaeaea;
+	box-shadow: 0 0.1rem 1rem rgba($color: #000000, $alpha: 0.1);
+  
+	transition: transform 0.2s;
+  
+	&:hover {
+	  transform: scale(1.05);
+	  background-color: white;
+	  border: none;
+	  box-shadow: 0 0.2rem 2rem rgba($color: #000000, $alpha: 0.1);
+	}
+  
+	&:first-child {
+	  margin-left: 0;
+	}
+	&:last-child {
+	  margin-right: 0;
+	}
+  
+	img {
+	  height: 100%;
+	  position: absolute;
+	  top: 0;
+	  width: 14rem;
+	  object-fit: cover;
+	  left: 0;
+	  border-top-right-radius: 1.2rem;
+	  border-bottom-right-radius: 1.2rem;
+	}
+  
+	.title {
+	  font-size: 1.2rem;
+	  color: #232323;
+	
+	  margin-bottom: 2rem;
+	}
+  
+	.description {
+	  margin-bottom: 1rem;
+	  color: #353535;
+	}
+  
+	.middle {
+	  display: flex;
+	  justify-content: space-between;
+	  color: #939393;
+	  margin-bottom: 1rem;
+  
+	  .length {
+		i {
+		  margin-right: 0.5rem;
+		}
+		span {
+		  font-size: 0.8rem;
+		}
+	  }
+	  .quantity {
+		i {
+		  margin-right: 0.5rem;
+		}
+		span {
+		  font-size: 0.8rem;
+		}
+	  }
+	}
+  
+	.line {
+	  border-bottom: 1px solid #939393;
+	  margin-bottom: 1rem;
+	}
+	.progress {
 		display: flex;
-		box-shadow: 0 0.2rem 2rem rgba($color: #000000, $alpha: 0.1);
-		border-radius: 1.2rem;
-		padding: 0.5rem 1rem;
-		img {
-			margin: 1rem;
-			width: 8rem;
-			height: 7rem;
-			border-radius: 1.2rem;
+		justify-content: space-between;
+		progress {
+			width: 80%;
 		}
-		.course {
-			padding: 1rem;
-		}
-		.description {
-			margin-top: 1rem;
-		}
-		.progress {
-			margin-top: 1rem;
+		p {
+			font-weight: 700;
 		}
 	}
-}
+  
+	.bottom {
+	  display: flex;
+	  justify-content: space-between;
+  
+	  .price {
+		color: #3eb489;
+		font-size: 1.2rem;
+		font-weight: 600;
+	  }
+  
+	  .star {
+		display: flex;
+		align-items: center;
+		i {
+		  margin-right: 0.5rem;
+		  font-size: 0.8rem;
+		  border: 1px solid #939393;
+		  border-radius: 50%;
+		  width: 1.4rem;
+		  height: 1.4rem;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		}
+		span {
+		  font-size: 0.8rem;
+		}
+	  }
+	}
+  }
+  
