@@ -19,6 +19,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RegisterFormComponent } from './components/register-form/register-form.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { ContactCardsComponent } from './components/contact-cards/contact-cards.component';
+import { ContactMapComponent } from './components/contact-map/contact-map.component';
+import { UserProfileComponent } from './pages/user-profile/user-profile.component';
+import { SideBarComponent } from './components/sidebar/sidebar.component';
+import { UserCourseComponent } from './components/user-course/user-course.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +43,14 @@ import { RegisterFormComponent } from './components/register-form/register-form.
     LoginFormComponent,
     AboutComponent,
     FooterComponent,
-    RegisterFormComponent
+    RegisterFormComponent,
+    ContactFormComponent,
+    ContactCardsComponent,
+    ContactMapComponent,
+    UserProfileComponent,
+    SideBarComponent,
+    UserCourseComponent
+    
   ],
   imports: [
     BrowserModule,

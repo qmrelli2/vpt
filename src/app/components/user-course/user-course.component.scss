@@ -1,0 +1,25 @@
+:host {
+	padding: 5rem;
+	width: 100%;
+	.card {
+		display: flex;
+		box-shadow: 0 0.2rem 2rem rgba($color: #000000, $alpha: 0.1);
+		border-radius: 1.2rem;
+		padding: 0.5rem 1rem;
+		img {
+			margin: 1rem;
+			width: 8rem;
+			height: 7rem;
+			border-radius: 1.2rem;
+		}
+		.course {
+			padding: 1rem;
+		}
+		.description {
+			margin-top: 1rem;
+		}
+		.progress {
+			margin-top: 1rem;
+		}
+	}
+}
