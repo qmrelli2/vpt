@@ -7,6 +7,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import { CoursesComponent } from './pages/courses/courses.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { UserProfileComponent } from './pages/user-profile/user-profile.component';
+import { CourseDetailComponent } from './pages/course-detail/course-detail.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path: 'user',
     component: UserProfileComponent,
+  },
+  {
+    path: 'course-detail',
+    component: CourseDetailComponent,
   }
 ];
 

@@ -25,6 +25,9 @@ import { ContactMapComponent } from './components/contact-map/contact-map.compon
 import { UserProfileComponent } from './pages/user-profile/user-profile.component';
 import { SideBarComponent } from './components/sidebar/sidebar.component';
 import { UserCourseComponent } from './components/user-course/user-course.component';
+import { CourseMainComponent } from './components/course-main/course-main.component';
+import { CourseDescriptionComponent } from './components/course-description/course-description.component';
+import { CourseDetailComponent } from './pages/course-detail/course-detail.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +52,10 @@ import { UserCourseComponent } from './components/user-course/user-course.compon
     ContactMapComponent,
     UserProfileComponent,
     SideBarComponent,
-    UserCourseComponent
+    UserCourseComponent,
+    CourseMainComponent,
+    CourseDescriptionComponent,
+    CourseDetailComponent
     
   ],
   imports: [
