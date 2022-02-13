@@ -23,11 +23,11 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
 import { ContactCardsComponent } from './components/contact-cards/contact-cards.component';
 import { ContactMapComponent } from './components/contact-map/contact-map.component';
 import { UserProfileComponent } from './pages/user-profile/user-profile.component';
-import { SideBarComponent } from './components/sidebar/sidebar.component';
+import { UserSideBarComponent } from './components/user-sidebar/user-sidebar.component';
 import { UserCourseComponent } from './components/user-course/user-course.component';
-import { CourseMainComponent } from './components/course-main/course-main.component';
-import { CourseDescriptionComponent } from './components/course-description/course-description.component';
 import { CourseDetailComponent } from './pages/course-detail/course-detail.component';
+import { CourseDetailSidebarComponent } from './components/course-detail-sidebar/course-detail-sidebar.component';
+import { CourseDetailDescriptionComponent } from './components/course-detail-description/course-detail-description.component';
 
 @NgModule({
   declarations: [
@@ -51,19 +51,14 @@ import { CourseDetailComponent } from './pages/course-detail/course-detail.compo
     ContactCardsComponent,
     ContactMapComponent,
     UserProfileComponent,
-    SideBarComponent,
+    UserSideBarComponent,
     UserCourseComponent,
-    CourseMainComponent,
-    CourseDescriptionComponent,
-    CourseDetailComponent
-    
+    CourseDetailComponent,
+    CourseDetailSidebarComponent,
+    CourseDetailDescriptionComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
