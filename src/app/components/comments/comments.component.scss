@@ -1,0 +1,52 @@
+:host {
+    padding: 1rem 1rem 1rem 15rem;
+    display: flex;
+    .container {
+        h3 {
+            padding: 2rem;
+        }
+        background-color: #f5f6f7;
+        border-radius: 1.2rem;
+        overflow: hidden;
+        border: 1px solid #eaeaea;
+        box-shadow: 0 0.1rem 1rem rgba($color: #000000, $alpha: 0.1);
+        .new-comment {
+            display: flex;
+            align-items: center;
+            padding: 0 2rem;
+            textarea {
+                width: 100%;
+            }
+            .button {
+                margin-left: 2rem;
+                border: none;
+                border-radius: 1.2rem;
+                color: white;
+                background-color: #3eb489;
+                width: 6rem;
+                height: 2rem;
+                font-size: 0.8rem;
+            }
+        }
+        .comments {
+            padding: 1rem 2rem;
+           
+            .content {
+                display: flex;
+                align-items: center;
+                img {
+                    width: 4rem;
+                    height: 4rem;
+                    border-radius: 50%;
+                }
+                p {
+                    margin-left: 1rem;
+                }
+            }
+            hr {
+                border-bottom: 1px solid #93939350;
+            }   
+         
+        }   
+    }
+}

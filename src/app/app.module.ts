@@ -28,6 +28,12 @@ import { UserCourseComponent } from './components/user-course/user-course.compon
 import { CourseDetailComponent } from './pages/course-detail/course-detail.component';
 import { CourseDetailSidebarComponent } from './components/course-detail-sidebar/course-detail-sidebar.component';
 import { CourseDetailDescriptionComponent } from './components/course-detail-description/course-detail-description.component';
+import { InstructorComponent } from './components/instructor/instructor.component';
+import { InstructorGlobalComponent } from './components/instructor-global/instructor-global.component';
+import { InstructorGlobalProfile } from './pages/instructor-global-profile/instructor-global-profile.component';
+import { InstructorProfile } from './pages/instructor-profile/instructor-profile.component';
+import { CommentsComponent } from './components/comments/comments.component';
+import { InstructorProfileSidebarComponent } from './components/instructor-profile-sidebar/instructor-profile-sidebar.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +62,12 @@ import { CourseDetailDescriptionComponent } from './components/course-detail-des
     CourseDetailComponent,
     CourseDetailSidebarComponent,
     CourseDetailDescriptionComponent,
+    InstructorComponent,
+    InstructorGlobalComponent,
+    InstructorGlobalProfile,
+    InstructorProfile,
+    CommentsComponent,
+    InstructorProfileSidebarComponent
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],

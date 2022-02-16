@@ -1,7 +1,10 @@
 :host {
-	display: flex;
-	justify-content: center;
 	padding: 5rem;
+	.container {
+		display: flex;
+		padding: 5rem;
+		justify-content: center;	
+	}
 	.courses {
 		margin-left: 5rem;
 	}
@@ -11,4 +14,4 @@
 		margin-bottom: 4rem;
 		color: #232323;
 	}
-}	
+}

@@ -8,6 +8,8 @@ import { CoursesComponent } from './pages/courses/courses.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { UserProfileComponent } from './pages/user-profile/user-profile.component';
 import { CourseDetailComponent } from './pages/course-detail/course-detail.component';
+import { InstructorProfile } from './pages/instructor-profile/instructor-profile.component';
+import { InstructorGlobalProfile } from './pages/instructor-global-profile/instructor-global-profile.component';
 
 const routes: Routes = [
   {
@@ -37,6 +39,14 @@ const routes: Routes = [
   {
     path: 'course-detail',
     component: CourseDetailComponent,
+  },
+  {
+    path: 'instructor-profile',
+    component: InstructorProfile,
+  },
+  {
+    path: 'instructor-global-profile',
+    component: InstructorGlobalProfile,
   }
 ];
 
